@@ -1,0 +1,64 @@
+DATA CLEANING AND PREPROCESSING REPORT
+
+Dataset: Titanic Dataset
+Tools Used: Python, Pandas and Excel
+
+
+1. OBJECTIVE
+
+The objective of this task was to clean and preprocess a raw Titanic dataset by identifying and resolving common data quality issues such as missing values, duplicate records, inconsistent text formatting and data type issues.
+
+
+2. DATA QUALITY ISSUES FOUND
+
+The raw dataset was inspected using Pandas functions such as:
+
+df.info()
+df.isnull().sum()
+df.duplicated().sum()
+
+The following data quality issues were identified:
+
+- Missing values in the Age column
+- Missing values in the Embarked column
+- Missing values in the Cabin column
+- Duplicate records were checked
+- Text formatting was standardized
+- Numeric data types were validated
+
+
+3. CLEANING ACTIONS
+
+Age:
+Missing Age values were replaced using the median Age. The median was selected because it is less affected by extreme values.
+
+Embarked:
+Missing Embarked values were replaced with the most frequent value (mode), since Embarked is a categorical column.
+
+Cabin:
+Missing Cabin values were replaced with "Unknown" so that records were retained instead of being deleted.
+
+Duplicates:
+Duplicate records were checked and removed where present.
+
+Text Formatting:
+The Sex column was standardized to lowercase and unnecessary whitespace was removed. The Embarked column was standardized to uppercase.
+
+Data Types:
+The Age and Fare columns were converted to numeric data types where necessary.
+
+
+4. VALIDATION
+
+After cleaning, the dataset was checked again for missing values, duplicate records and data types.
+
+The cleaned dataset was successfully exported as:
+
+cleaned_titanic.csv
+
+A separate Excel change log was also created to document the cleaning actions.
+
+
+5. CONCLUSION
+
+The Titanic dataset was successfully cleaned and prepared for further analysis. The cleaning process improved consistency, handled missing information appropriately and ensured that the dataset was ready for reliable data analysis.
