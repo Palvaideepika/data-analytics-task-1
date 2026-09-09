@@ -1,0 +1,40 @@
+ROLLBACK EVIDENCE
+Data Analytics Task 1
+
+Purpose:
+Document the rollback strategy and deployment validation for the project.
+
+Version Control:
+The project is maintained in a GitHub repository using Git version control.
+Project changes are recorded through Git commits.
+
+Last Validated Commit:
+Commit: e5527f5
+
+Deployment Validation:
+GitHub Actions successfully validated the project after commit e5527f5.
+
+Workflow:
+Data Analytics Task 1 Deployment
+
+Validation performed:
+- Python environment setup
+- Required dependencies installation
+- Python script syntax validation
+- Successful workflow completion
+
+Rollback Procedure:
+1. Identify the last known working commit.
+2. Revert the unwanted change.
+3. Push the reverted version to the main branch.
+4. GitHub Actions runs the deployment validation workflow.
+5. Confirm that the validation workflow completes successfully.
+
+Current Evidence:
+Commit e5527f5 successfully passed the Data Analytics Task 1 Deployment
+GitHub Actions workflow.
+
+Expected Rollback Outcome:
+If a future project change causes an issue, the repository can be reverted
+to a previous working commit and the deployment validation workflow can be
+used to confirm that the restored version is valid.
