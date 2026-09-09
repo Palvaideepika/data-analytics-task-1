@@ -1,0 +1,33 @@
+ROLLBACK EVIDENCE
+Data Analytics Task 1
+
+Purpose:
+Document the rollback procedure for the project deployment.
+
+Rollback Strategy:
+The project is maintained in a GitHub repository using Git version control.
+Each project update is stored as a commit.
+
+Rollback Procedure:
+1. Identify the last known working commit.
+2. Open the GitHub repository history.
+3. Select the commit that represents the working version.
+4. Revert the unwanted change using Git.
+5. Push the reverted version to the main branch.
+6. GitHub Actions automatically runs the deployment validation workflow.
+7. Confirm that the Python script passes validation.
+
+Deployment Validation:
+The deployment workflow validates:
+- Python environment
+- Required dependencies
+- main.py syntax
+- Successful workflow execution
+
+Rollback Evidence:
+Repository commit history provides a record of previous project versions.
+The deployment workflow provides validation after changes are committed.
+
+Expected Outcome:
+If a new change causes an issue, the repository can be reverted to a previous
+working commit and the deployment validation workflow can be run again.
